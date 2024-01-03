@@ -1,0 +1,30 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+// bosquejo o estructura de la base de datos
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Users {
+  email            String            @db.VarChar(128)
+  id               Int               @id @default(autoincrement())
+  name             String            @db.VarChar(64)
+  password         String
+  books            Books[]
+}
+
+model Books {
+  id            Int        @id @default(autoincrement())
+  author        String     @db.VarChar(64)
+  isbn          String     @db.VarChar(64)
+  release_date  DateTime   @db.Date
+  title         String     @db.VarChar(64)
+  user_id       Int        
+  users         Users      @relation(fields: [user_id], references: [id])
+}
