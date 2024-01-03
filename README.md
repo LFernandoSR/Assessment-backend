@@ -1,6 +1,6 @@
 ## Assessment-backend
-Repositorio con los resultados del ejercicio de prueba sobre el backend de una libreria
-Todos los puntos del ejercicio funcionan y fueron comprobados antes de subir en caso de duda o aclaracion mandar mensaje
+Repositorio con los resultados del ejercicio de prueba sobre el backend de una libreria  
+Todos los puntos del ejercicio funcionan y fueron comprobados antes de subir en caso de duda o aclaracion mandar mensaje  
 
 ## Requisitos antes de instalar
 Tener node instalado
