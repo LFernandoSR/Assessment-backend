@@ -17,7 +17,7 @@ PORT=3000
 npm install  
 npx prisma db push  
 npx prisma db seed  
-los ultimos dos comandos solo en caso de no cargar la base de datos directa  
+los ultimos dos crean la base de datos con datos, pocos pero son de prueba 
 
 ## Comandos para correr API
 npm run dev  
